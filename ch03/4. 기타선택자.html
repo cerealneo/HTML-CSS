@@ -9,13 +9,15 @@
         !-->
         <style>
             /*속성선택자*/
-            input[type=text]{
+            input[type=text] {
                 background-color: yellow;
             }
-            input[name=pass]{
-                background-color: red;
+            input[name=pass] {
+                color: red;
             }
-
+            input[value] {
+                background-color: green;
+            }
             
             /*반응선택자*/
             .box {
@@ -34,7 +36,6 @@
             input[type=checkbox]:checked+span{
                 background: orange;
             }
-
 
             /*가상요소선택자*/
             ul.won > li::after {
