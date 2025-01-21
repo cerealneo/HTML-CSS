@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>4. 기타선택자</title>
+        <!--
+        날짜 : 2025/01/21
+        이름 : 이민성
+        내용 : CSS 기타선택자 실습하기
+        !-->
+        <style>
+            /*속성선택자*/
+            input[type=text]{
+                background-color: yellow;
+            }
+            input[name=pass]{
+                background-color: red;
+            }
+
+            
+            /*반응선택자*/
+            .box {
+                width: 100px;
+                height: 100px;
+                border: 1px solid black;
+            }
+
+            .box1:active{
+                background: red;
+            }
+            .box2:hover{
+                background-color: green;
+            }
+
+            input[type=checkbox]:checked+span{
+                background: orange;
+            }
+
+
+            /*가상요소선택자*/
+            ul.won > li::after {
+                content: '원';
+            }
+
+            ul.dollar > li::before{
+                content:  '$';
+            }
+        </style>
+</head>
+<body>
+    <h3>4. CSS 기타선택자</h3>
+
+    <H4>속성선택자</H4>
+    <FORM action="#">
+        <input type="text" name="uid"> <br>
+        <input type="password" name="pass"> <br>
+        <input type="submit" name="로그인">
+    </FORM>
+
+
+    <H4>반응선택자</H4>
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <label>
+        <input type="checkbox" name="check"><span>체크박스</span>
+    </label>
+
+
+    <H4>가상요소선택자</H4>
+    <ul class="won">
+        <li>1000</li>
+        <li>2000</li>
+        <li>3000</li>
+    </ul>
+
+    <ul class="dollar">
+        <li>1000</li>
+        <li>2000</li>
+        <li>3000</li>
+    </ul>
+</body>
+</html>
