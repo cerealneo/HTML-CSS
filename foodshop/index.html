@@ -14,7 +14,7 @@
         * {
             margin: 0;
             padding: 0;
-            font: normal 12px '돋움';
+            font: normal 12px 'noto sans korean';
         }
 
         ul,
@@ -35,20 +35,17 @@
         #container {
             width: 100%;
             height: auto;
-            border: 1px solid red;
             box-sizing: border-box;
         }
 
         header {
             width: 100%;
             height: auto;
-            border: 1px solid blue;
             box-sizing: border-box;
         }
 
         header>div {
             width: 100%;
-            border: 1px solid green;
             box-sizing: border-box;
         }
 
@@ -70,33 +67,32 @@
         header>div>* {
             width: 1100px;
             height: 100%;
-            border: 1px solid orange;
             box-sizing: border-box;
             margin: 0 auto;
         }
 
-        header .top > p{
+        header .top>p {
             float: right;
             margin-top: 10px;
         }
 
-        header article{
+        header article {
             position: relative;
         }
 
-        header article> .shopping{
+        header article>.shopping {
             position: absolute;
             left: 10px;
             bottom: 10px;
         }
 
-        header article> .shopping > span:nth-last-of-type(2){
+        header article>.shopping>span:nth-last-of-type(2) {
             color: #ff6a00;
             font-size: 15px;
             font-weight: 500;
         }
 
-        header article> .shopping > span:nth-last-of-type(1){
+        header article>.shopping>span:nth-last-of-type(1) {
             font-size: 12px;
         }
 
@@ -107,22 +103,21 @@
             margin-left: -173px;
         }
 
-        header article>.oneday{
+        header article>.oneday {
             position: absolute;
             right: 0;
             bottom: 20px;
         }
-        
 
-        header nav > ul {
+
+        header nav>ul {
             overflow: hidden;
         }
 
-        header nav > ul > li {
+        header nav>ul>li {
             float: left;
             width: 11.11%;
             height: 100%;
-            border: 1px solid red;
             box-sizing: border-box;
         }
 
@@ -144,14 +139,12 @@
         main {
             width: 100%;
             height: auto;
-            border: 1px solid blue;
             box-sizing: border-box;
         }
 
         main>section {
             width: 100%;
             height: auto;
-            border: 1px solid green;
             box-sizing: border-box;
         }
 
@@ -182,12 +175,13 @@
         main>section>article {
             width: 1100px;
             height: 100%;
-            border: 1px solid orange;
             box-sizing: border-box;
             margin: 0 auto;
         }
 
-        main>.slider {}
+        main>.slider {
+            background-color: #ffeed4;
+        }
 
         main>.go {}
 
@@ -195,31 +189,33 @@
             padding: 30px 10px;
             box-sizing: border-box;
         }
+        
 
         main>.go div {
             float: left;
-            border: 1px solid gray;
             box-sizing: border-box;
         }
+
+        
 
         main>.go div:nth-child(1) {
             width: 412px;
             height: 450px;
-            background: url("images/main_go_bg1.png");
+            background: url(/foodshop/images/main_go_bg1.png);
         }
 
         main>.go div:nth-child(2) {
             width: 322px;
             height: 220px;
             margin-left: 11px;
-            background: url("images/main_go_bg2.png");
+            background: url(/foodshop/images/main_go_bg2.png);
         }
 
         main>.go div:nth-child(3) {
             float: right;
             width: 322px;
             height: 220px;
-            background: url("images/main_go_bg3.png");
+            background: url(/foodshop/images/main_go_bg3.png);
         }
 
         main>.go div:nth-child(4) {
@@ -227,7 +223,7 @@
             height: 220px;
             margin-left: 11px;
             margin-top: 10px;
-            background: url("images/main_go_bg4.png");
+            background: url(/foodshop/images/main_go_bg4.png);
         }
 
         main>.go div:nth-child(5) {
@@ -235,15 +231,52 @@
             width: 322px;
             height: 220px;
             margin-top: 10px;
-            background: url("images/main_go_bg5.png");
+            background: url(/foodshop/images/main_go_bg5.png);
+        }
+
+        main > .go > article > .banner {
+            position: relative;
+            float: left;
+        }
+
+         main > .go > article > .banner > a {
+            position: absolute;            
+            left: 26px;
+            top: 36px;
+        }
+
+        main > .go > article > .banner > a .cat {
+            font-weight: bold;
+            font-size: 16px;
+            color: #ff6312;
+        }
+
+        main > .go > article > .banner > a .title {
+            font-size: 24px;            
+            color: #fcfffd;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            line-height: 30px;
+        }
+
+        main > .go > article > .banner > a .title > i {
+            display: block;
+            margin-top: 24px;
+            font-size: 14px;
+        }
+
+        main > .go > article > .banner > a .title.dark {
+            color: #3c362a;
         }
 
 
         main>.oneday {
-            background: url("images/oneday_bg.png");
+            background: url(/foodshop/images/oneday_bg.png);
+            background-size: cover;
+            background-position: 50% center;
         }
 
-        main> .oneday > article img{
+        main>.oneday>article img {
             margin-top: 50px;
         }
 
@@ -272,21 +305,27 @@
         }
 
         main>.premium {
-            background: url(./images/premium_bg.png);
-    
+            background: url(/foodshop/images/premium_bg.png);
+            background-size: cover;
+            background-position: 50% center;
+
         }
 
-        main> .premium>article{
+        main>.premium>article {
             text-align: center;
         }
 
-        main> .premium > article img{
-            margin-top: 50px;
+        main>.premium>article img {
+            margin-top: 52px;
         }
 
         main>.seafood {}
 
-        main>.seafood>article {}
+        main>.seafood>article {
+            padding: 60px 0px 40px;
+            box-sizing: border-box;
+            text-align: center;
+        }
 
         main>.seafood ul {
             width: 100%;
@@ -303,6 +342,22 @@
             border: 1px solid pink;
             box-sizing: border-box;
         }
+
+        main .all {
+            display: block;
+            width: 300px;
+            height: 50px;
+            border: 1px solid #efefef;
+            box-shadow: 0px 2px 2px #999;
+            text-align: center;
+            line-height: 50px;
+            margin: 56px auto 0;
+            color: #626262;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+
 
         footer {
             width: 100%;
@@ -334,6 +389,35 @@
             box-sizing: border-box;
             margin: 0 auto;
         }
+
+        footer .terms {
+            float: left;
+            margin-top: 14px;
+            color: #eee;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        footer .terms > a {
+            color: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+        }
+        footer .terms > a:first-child {color: #ff6a00;}
+
+        footer .info {
+            float: left;
+            margin-top: 16px;
+            color: #aca9a9;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 26px;
+        }
+
+        footer .tel {
+            float: right;
+            margin-top: 16px;
+        }
     </style>
 </head>
 
@@ -353,15 +437,15 @@
             <div>
                 <article>
                     <a href="#" class="shopping">
-                        <img src="./images/ico_shopping.png" alt="주문조회 바로가기">
+                        <img src="/foodshop/images/ico_shopping.png" alt="주문조회 바로가기">
                         <span>SHOPPING</span>
                         <SPan>주문조회 바로가기</SPan>
                     </a>
                     <a href="#" class="logo">
-                        <img src="./images/header_txt_logo.png" alt="식자재전문쇼핑몰">
+                        <img src="/foodshop/images/header_txt_logo.png" alt="식자재전문쇼핑몰">
                     </a>
                     <a href="#" class="oneday">
-                        <img src="./images/header_txt_onday.png" alt="원데이 번개장터">
+                        <img src="/foodshop/images/header_txt_onday.png" alt="원데이 번개장터">
                     </a>
                 </article>
             </div>
@@ -385,14 +469,14 @@
         <main>
             <section class="slider">
                 <article>
-                    <img src="./images/slider_banner1.jpg" alt="자연의 신선함!">
+                    <img src="/foodshop/images/slider_banner1.jpg" alt="자연의 신선함!">
                 </article>
             </section>
             <section class="go">
                 <article>
-                    <div class="banner1">
-                        <a href="#"><span>생활야채</span>
-                            <p>1일 1야채 <br>
+                    <div class="banner banner1">
+                        <a href="#"><span class="cat">생활야채</span>
+                            <p class="title">1일 1야채 <br>
                                 건강한 생활습관
                                 <i>
                                     아삭아삭 건강에도 좋은 <br>
@@ -400,51 +484,51 @@
                                     생활에 활기를 느껴보세요!
                                 </i>
                             </p>
-                            <img src="./images/main_go_ico.png" alt="1일1야채 건강한 생활습관">
+                            <img src="/foodshop/images/main_go_ico.png" alt="1일1야채 건강한 생활습관">
                         </a>
                     </div>
-                    <div class="banner2">
-                        <a href="#"><span>특별이벤트</span>
-                            <p>shop에서 진행하는 <br>
+                    <div class="banner banner2">
+                        <a href="#"><span class="cat">특별이벤트</span>
+                            <p class="title dark">shop에서 진행하는 <br>
                                 특별이벤트!</p>
-                            <img src="./images/main_go_ico.png" alt="특별이벤트">
+                            <img src="/foodshop/images/main_go_ico.png" alt="특별이벤트">
                         </a>
                     </div>
-                    <div class="banner3">
-                        <a href="#"><span>하루할인</span>
-                            <p>오늘의 <br>
+                    <div class="banner banner3">
+                        <a href="#"><span class="cat">하루할인</span>
+                            <p class="title">오늘의 <br>
                                 할인상품!</p>
-                            <img src="./images/main_go_ico.png" alt="하루할인">
+                            <img src="/foodshop/images/main_go_ico.png" alt="하루할인">
                         </a>
                     </div>
-                    <div class="banner4">
-                        <a href="#"><span>프리미엄</span>
-                            <p>shop에서 인증하는<br>
+                    <div class="banner banner4">
+                        <a href="#"><span class="cat">프리미엄</span>
+                            <p class="title">shop에서 인증하는<br>
                                 프리미엄 상품</p>
-                            <img src="./images/main_go_ico.png" alt="프리미엄">
+                            <img src="/foodshop/images/main_go_ico.png" alt="프리미엄">
                         </a>
                     </div>
-                    <div class="banner5">
-                        <a href="#"><span>인기상품</span>
-                            <p>shop의<br>
+                    <div class="banner banner5">
+                        <a href="#"><span class="cat">인기상품</span>
+                            <p class="title dark">shop의<br>
                                 인기상품</p>
-                            <img src="./images/main_go_ico.png" alt="인기상품">
+                            <img src="/foodshop/images/main_go_ico.png" alt="인기상품">
                         </a>
                     </div>
                 </article>
             </section>
             <section class="oneday">
                 <article>
-                    <a href="#"> <img src="./images/oneday_txt.png" alt="원데이 번개상품"></a>
+                    <a href="#"> <img src="/foodshop/images/oneday_txt.png" alt="원데이 번개상품"></a>
                 </article>
             </section>
             <section class="vegetable">
                 <article>
-                    <img src="./images/vegetable_tit.png" alt="1일 1야채로 건강한 생활습관">
-                    <ul>
+                    <img src="/foodshop/images/vegetable_tit.png" alt="1일 1야채로 건강한 생활습관">
+                    <ul class="thumbs">
                         <li>
                             <a href="#">
-                                <img src="./images/thumb1.jpg" alt="플레인요거트">
+                                <img src="/foodshop/images/thumb1.jpg" alt="플레인요거트">
                                 <h1>플레인요거트 4개입</h1>
                                 <p>견과류, 과일과 같이 먹는 플레인 요거트</p>
                                 <h2>7,500원</h2>
@@ -452,7 +536,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/thumb2.jpg" alt="프랑스 더치커피">
+                                <img src="/foodshop/images/thumb2.jpg" alt="프랑스 더치커피">
                                 <h1>프랑스 더치커피</h1>
                                 <p>프랑스만의 방식으로 내려진 더치커피</p>
                                 <h2>5,000원</h2>
@@ -460,7 +544,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/thumb3.jpg" alt="로얄밀크 홍차">
+                                <img src="/foodshop/images/thumb3.jpg" alt="로얄밀크 홍차">
                                 <h1>로얄밀크 홍차</h1>
                                 <p>일본에서 온 깊고 풍부한맛의 로얄밀크티</p>
                                 <h2>17,000원</h2>
@@ -468,30 +552,30 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/thumb4.jpg" alt="스위트 핫초코">
+                                <img src="/foodshop/images/thumb4.jpg" alt="스위트 핫초코">
                                 <h1>스위스 핫초코 320g</h1>
                                 <p>스위스에서 온 핫초코로 따뜻한 연말</p>
                                 <h2>4,000원</h2>
                             </a>
                         </li>
                     </ul>
-                    <a href="#">전체 상품 보기</a>
+                    <a href="#" class="all">전체 상품 보기</a>
                 </article>
             </section>
             <section class="premium">
                 <article>
                     <a href="#">
-                        <img src="./images/main_premium_tit.png" alt="프리미엄 상품소개">
+                        <img src="/foodshop/images/main_premium_tit.png" alt="프리미엄 상품소개">
                     </a>
                 </article>
             </section>
             <section class="seafood">
                 <article>
-                    <img src="./images/seafood_tit.png" alt="신선하고 담백한 해산물">
+                    <img src="/foodshop/images/seafood_tit.png" alt="신선하고 담백한 해산물">
                     <ul>
                         <li>
                             <a href="#">
-                                <img src="./images/thumb1.jpg" alt="플레인요거트">
+                                <img src="/foodshop/images/thumb1.jpg" alt="플레인요거트">
                                 <h1>플레인요거트 4개입</h1>
                                 <p>견과류, 과일과 같이 먹는 플레인 요거트</p>
                                 <h2>7,500원</h2>
@@ -499,7 +583,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/thumb2.jpg" alt="프랑스 더치커피">
+                                <img src="/foodshop/images/thumb2.jpg" alt="프랑스 더치커피">
                                 <h1>프랑스 더치커피</h1>
                                 <p>프랑스만의 방식으로 내려진 더치커피</p>
                                 <h2>5,000원</h2>
@@ -507,7 +591,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/thumb3.jpg" alt="로얄밀크 홍차">
+                                <img src="/foodshop/images/thumb3.jpg" alt="로얄밀크 홍차">
                                 <h1>로얄밀크 홍차</h1>
                                 <p>일본에서 온 깊고 풍부한맛의 로얄밀크티</p>
                                 <h2>17,000원</h2>
@@ -515,14 +599,14 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/thumb4.jpg" alt="스위트 핫초코">
+                                <img src="/foodshop/images/thumb4.jpg" alt="스위트 핫초코">
                                 <h1>스위스 핫초코 320g</h1>
                                 <p>스위스에서 온 핫초코로 따뜻한 연말</p>
                                 <h2>4,000원</h2>
                             </a>
                         </li>
                     </ul>
-                    <a href="#">전체 상품 보기</a>
+                    <a href="#" class="all">전체 상품 보기</a>
                 </article>
             </section>
         </main>
@@ -546,7 +630,7 @@
                             070-1234-5678<br>
                             팩스번호 : 051-1234-5678&nbsp;&nbsp;&nbsp;개인정보관리자 : 김유신&nbsp;&nbsp;&nbsp;주소 : 부산시 부산진구 서전로 123
                         </p>
-                        <img src="./images/footer_tel.png" class="tel" alt="365 고객센터">
+                        <img src="/foodshop/images/footer_tel.png" class="tel" alt="365 고객센터">
                     </div>
                 </div>
             </div>
